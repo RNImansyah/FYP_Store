@@ -13,7 +13,7 @@ namespace FYP_App
         {
             SqlConnection conn = null;
 
-            conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=C:\USERS\IMANSYAH\SOURCE\REPOS\FYP_APP\FYP_APP\APP_DATA\DB_1.MDF;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Imansyah\source\repos\FYP_App\FYP_App\App_Data\DB_1.mdf;Integrated Security=True");
             return conn;
         }
 
@@ -35,7 +35,57 @@ namespace FYP_App
             {
                 conn.Close();
             }
-
+        
         }
+
+        public static bool loginstate(string email, string password)
+        {
+            bool result = false;
+            SqlConnection conn = getConnection();
+            conn.Open();
+            string query = "select email, password, user_type from user_table where email =  '" + email + "' and password = '" + password + "'";
+
+            SqlCommand cm = new SqlCommand(query, conn);
+            SqlDataReader sdr = cm.ExecuteReader();
+
+            if (sdr.HasRows)
+            {
+                result = true;
+                System.Web.HttpContext.Current.Session["Email"] = email;
+
+                while (sdr.Read())
+                {
+                    System.Web.HttpContext.Current.Session["UserType"] = sdr["User_Type"].ToString();
+                }
+
+            }
+            closeConnection(conn);
+            return result;
+        }
+
+        public static string getFName(string email)
+        {
+            string result = "";
+            SqlConnection conn = getConnection();
+            conn.Open();
+            string query = "select first_name from user_table where email = '" + email + "'";
+
+            SqlCommand cm = new SqlCommand(query, conn);
+            SqlDataReader sdr = cm.ExecuteReader();
+
+            if (sdr.HasRows)
+            {
+
+                while (sdr.Read())
+                {
+                    result = sdr["first_name"].ToString();
+                }
+
+            }
+            closeConnection(conn);
+            return result;
+        }
+        
+        
     }
 }

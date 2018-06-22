@@ -1,0 +1,206 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminPage.master.cs" Inherits="FYP_App.AdminPage1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="Author" content="" />
+
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <!-- WEB FONTS : use %7C instead of | (pipe) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+    <!-- CORE CSS -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- REVOLUTION SLIDER -->
+    <link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+    <!-- THEME CSS -->
+    <link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/thematics-education.css" rel="stylesheet" type="text/css" />
+
+    <!-- PAGE LEVEL SCRIPTS -->
+    <link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="wrapper">
+
+        <!-- Top Bar -->
+        <div id="topBar">
+            <div class="container">
+
+                <!-- right -->
+                <ul class="top-links list-inline float-right">
+                    <%
+                        if (email != string.Empty)
+                        {
+
+
+                    %>
+                    <li class="text-welcome">Welcome to Smarty, <strong><%=name %></strong></li>
+                    <li>
+
+                        <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#">MY ACCOUNT</a>
+                        <ul class="dropdown-menu float-right">
+                            <li><a tabindex="-1" href="#"><i class="fa fa-cog"></i>USER DETAILS</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="Logout.aspx"><i class="glyphicon glyphicon-off"></i>LOGOUT</a></li>
+                        </ul>
+
+                    </li>
+                    <%}
+                        else
+                        {
+                    %>
+                    <li><a href="LoginPage.aspx">LOGIN</a></li>
+                    <li><a href="LoginPage.aspx">REGISTER</a></li>
+                    <%
+                        }
+                    %>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /Top Bar -->
+
+        <div id="header" class="navbar-toggleable-md sticky clearfix">
+
+            <!-- SEARCH HEADER -->
+            <div class="search-box over-header">
+                <a id="closeSearch" href="#" class="fa fa-remove"></a>
+
+                <form action="http://theme.stepofweb.com/Smarty/v2.2.1/HTML_BS4/page-search-result-1.html" method="get">
+                    <input type="text" class="form-control" placeholder="SEARCH" />
+                </form>
+            </div>
+            <!-- /SEARCH HEADER -->
+
+            <!-- TOP NAV -->
+            <header id="topNav">
+                <div class="container">
+
+                    <!-- Mobile Menu Button -->
+                    <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- BUTTONS -->
+                    <ul class="float-right nav nav-pills nav-second-main">
+
+                        <!-- SEARCH -->
+                        <li class="search">
+                            <a href="javascript:;">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                        <!-- /SEARCH -->
+
+
+                    </ul>
+                    <!-- /BUTTONS -->
+
+
+                    <!-- Logo -->
+                    <a class="logo float-left" href="index.html">
+                        <img src="assets/images/_smarty/logo_light.png" alt="" />
+                    </a>
+
+                    <!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+                    <div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+                        <nav class="nav-main">
+                            <ul id="topMain" class="nav nav-pills nav-main">
+                                <li class="dropdown active">
+                                    <!-- HOME -->
+                                    <a href="HomePage.aspx">HOME
+                                    </a>
+
+                                </li>
+
+                                <li class="dropdown active">
+                                    <!-- HOME -->
+                                    <a href="HomePage.aspx">MANAGE USER
+                                    </a>
+
+                                </li>
+
+                                <li class="dropdown active">
+                                    <!-- HOME -->
+                                    <a href="HomePage.aspx">MANAGE FEEDBACK
+                                    </a>
+
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </div>
+
+                </div>
+            </header>
+            <!-- /Top Nav -->
+
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <!-- FOOTER -->
+        <footer id="footer">
+
+            <div class="copyright">
+                <div class="container">
+                    <ul class="float-right m-0 list-inline mobile-block">
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li>&bull;</li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                    &copy; All Rights Reserved, Company LTD
+                </div>
+            </div>
+
+        </footer>
+        <!-- /FOOTER -->
+    </div>
+    <a href="#" id="toTop"></a>
+
+    <%--    		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->--%>
+    <!-- JAVASCRIPT FILES -->
+    <script>var plugin_path = 'assets/plugins/index.html';</script>
+    <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+
+
+    <!-- REVOLUTION SLIDER -->
+    <script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/js/view/demo.revolution_slider.js"></script>
+    <script src="assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatables/js/dataTables.tableTools.min.js"></script>
+    <script src="assets/plugins/datatables/js/dataTables.colReorder.min.js"></script>
+    <script src="assets/plugins/datatables/js/dataTables.scroller.min.js"></script>
+    <script src="assets/plugins/datatables/dataTables.bootstrap.js"></script>
+    <script src="assets/plugins/select2/js/select2.full.min.js"></script>
+    <script src="assets/js/table.js"></script>
+</body>
+</html>
