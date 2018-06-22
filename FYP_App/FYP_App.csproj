@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DefaultPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -79,10 +80,84 @@
     <Content Include="App_Data\DB_1_log.ldf">
       <DependentUpon>DB_1.mdf</DependentUpon>
     </Content>
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\pixeladmin.min-blessed1c130.css" />
+    <Content Include="assets\css\pixeladmin.min.css" />
+    <Content Include="assets\css\themes\index.html" />
+    <Content Include="assets\css\widgets.min.css" />
+    <Content Include="assets\demo\avatars\1.jpg" />
+    <Content Include="assets\demo\avatars\2.jpg" />
+    <Content Include="assets\demo\avatars\3.jpg" />
+    <Content Include="assets\demo\avatars\4.jpg" />
+    <Content Include="assets\demo\avatars\5.jpg" />
+    <Content Include="assets\demo\blog\1.jpg" />
+    <Content Include="assets\demo\blog\2.jpg" />
+    <Content Include="assets\demo\customers\1.png" />
+    <Content Include="assets\demo\customers\10.png" />
+    <Content Include="assets\demo\customers\11.png" />
+    <Content Include="assets\demo\customers\12.png" />
+    <Content Include="assets\demo\customers\13.png" />
+    <Content Include="assets\demo\customers\14.png" />
+    <Content Include="assets\demo\customers\15.png" />
+    <Content Include="assets\demo\customers\16.png" />
+    <Content Include="assets\demo\customers\17.png" />
+    <Content Include="assets\demo\customers\2.png" />
+    <Content Include="assets\demo\customers\3.png" />
+    <Content Include="assets\demo\customers\4.png" />
+    <Content Include="assets\demo\customers\5.png" />
+    <Content Include="assets\demo\customers\6.png" />
+    <Content Include="assets\demo\customers\7.png" />
+    <Content Include="assets\demo\customers\8.png" />
+    <Content Include="assets\demo\customers\9.png" />
+    <Content Include="assets\demo\demo.css" />
+    <Content Include="assets\demo\demo.js" />
+    <Content Include="assets\demo\thumbs\1.jpg" />
+    <Content Include="assets\demo\thumbs\2.jpg" />
+    <Content Include="assets\demo\thumbs\3.jpg" />
+    <Content Include="assets\demo\thumbs\4.jpg" />
+    <Content Include="assets\demo\thumbs\5.jpg" />
+    <Content Include="assets\demo\thumbs\6.jpg" />
+    <Content Include="assets\demo\thumbs\7.jpg" />
+    <Content Include="assets\demo\thumbs\8.jpg" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\pixeladmin.min.js" />
+    <Content Include="assets\pace\pace.min.js" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="LoginPage.aspx" />
+    <Content Include="RegisterPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassDefault.cs" />
+    <Compile Include="DefaultPage.Master.cs">
+      <DependentUpon>DefaultPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultPage.Master.designer.cs">
+      <DependentUpon>DefaultPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterPage.aspx.cs">
+      <DependentUpon>RegisterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterPage.aspx.designer.cs">
+      <DependentUpon>RegisterPage.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
