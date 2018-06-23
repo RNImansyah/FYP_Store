@@ -5,13 +5,11 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
-        <h1>Hi admin</h1>
-    </div>
+
     <section>
 				<div class="container">
 
-					<h4>Columns Reorder <small>(drag &amp; drop column head)</small></h4>
+					<%--<h4>Columns Reorder <small>(drag &amp; drop column head)</small></h4>--%>
 					<table class="table table-striped table-bordered table-hover" id="sample_5">
 						<thead>
 							<tr>

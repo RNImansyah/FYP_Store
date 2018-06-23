@@ -13,7 +13,7 @@ namespace FYP_App
         {
             SqlConnection conn = null;
 
-            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Imansyah\source\repos\FYP_App\FYP_App\App_Data\DB_1.mdf;Integrated Security=True");
+            conn = new SqlConnection(@"Data Source=IMANSYAH;Initial Catalog=FYP_DB;Integrated Security=True");
             return conn;
         }
 

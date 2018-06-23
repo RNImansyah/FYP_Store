@@ -49,13 +49,13 @@
 
 
                     %>
-                    <li class="text-welcome">Welcome to Smarty, <strong><%=name %></strong></li>
+                    <li class="text-welcome">Welcome, <strong><%=name %></strong></li>
                     <li>
 
                         <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#">MY ACCOUNT</a>
                         <ul class="dropdown-menu float-right">
-                            <li><a tabindex="-1" href="#"><i class="fa fa-cog"></i>USER DETAILS</a></li>
-                            <li class="divider"></li>
+                            <%--<li><a tabindex="-1" href="#"><i class="fa fa-cog"></i>USER DETAILS</a></li>
+                            <li class="divider"></li>--%>
                             <li><a tabindex="-1" href="Logout.aspx"><i class="glyphicon glyphicon-off"></i>LOGOUT</a></li>
                         </ul>
 
@@ -135,14 +135,21 @@
 
                                 <li class="dropdown active">
                                     <!-- HOME -->
-                                    <a href="HomePage.aspx">MANAGE USER
+                                    <a href="AdminPage.aspx">MANAGE USER
                                     </a>
 
                                 </li>
 
                                 <li class="dropdown active">
                                     <!-- HOME -->
-                                    <a href="HomePage.aspx">MANAGE FEEDBACK
+                                    <a href="ManageResultPage.aspx">MANAGE RESULT
+                                    </a>
+
+                                </li>
+
+                                <li class="dropdown active">
+                                    <!-- HOME -->
+                                    <a href="ManageFeedbackPage.aspx">MANAGE FEEDBACK
                                     </a>
 
                                 </li>
@@ -166,11 +173,11 @@
             <div class="copyright">
                 <div class="container">
                     <ul class="float-right m-0 list-inline mobile-block">
-                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Predictive Identification System for Project Management Methodology</a></li>
                         <li>&bull;</li>
-                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Asia Pacific University (APU)</a></li>
                     </ul>
-                    &copy; All Rights Reserved, Company LTD
+                    &copy; All Rights Reserved, Final Year Project
                 </div>
             </div>
 

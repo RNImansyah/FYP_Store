@@ -44,10 +44,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -66,6 +74,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminManageResultPage.aspx" />
     <Content Include="AdminPage.aspx" />
     <Content Include="assets\css\color_scheme\blue.css" />
     <Content Include="assets\css\color_scheme\brown.css" />
@@ -86,6 +95,7 @@
     <Content Include="assets\css\layout-jqgrid.css" />
     <Content Include="assets\css\layout-shop.css" />
     <Content Include="assets\css\layout.css" />
+    <Content Include="assets\css\material.min.css" />
     <Content Include="assets\css\owl.video.play.html" />
     <Content Include="assets\css\pack-caffe.css" />
     <Content Include="assets\css\pack-hotel.css" />
@@ -397,7 +407,9 @@
     <Content Include="assets\images\_smarty\transparent.png" />
     <Content Include="assets\images\_smarty\user-min.jpg" />
     <Content Include="assets\images\_smarty\world-map.png" />
+    <Content Include="assets\js\Angular.js" />
     <Content Include="assets\js\contact.js" />
+    <Content Include="assets\js\material.js" />
     <Content Include="assets\js\table.js" />
     <Content Include="assets\js\view\demo.camera_slider.js" />
     <Content Include="assets\js\view\demo.elastic_slider.js" />
@@ -514,6 +526,7 @@
     <Content Include="assets\plugins\slider.revolution\js\jquery.themepunch.tools.min.js" />
     <Content Include="assets\plugins\slider.swiper\dist\css\swiper.min.css" />
     <Content Include="assets\plugins\slider.swiper\dist\js\swiper.min.js" />
+    <Content Include="ContactUsPage.aspx" />
     <Content Include="DefaultPage.Master" />
     <Content Include="assets\fonts\et-line.eot" />
     <Content Include="assets\fonts\et-line.ttf" />
@@ -1546,12 +1559,26 @@
     <Content Include="demo_files\images\yellow-min.jpg" />
     <Content Include="demo_files\styleswitcher\styleswitcher.js" />
     <Content Include="HomePage.aspx" />
+    <Content Include="IdentifyMethodologyPage.aspx" />
+    <Content Include="IdentifyResultPage.aspx" />
     <Content Include="LoginPage.aspx" />
     <Content Include="Logout.aspx" />
-    <Content Include="RegisterPage.aspx" />
+    <Content Include="ManageFeedbackPage.aspx" />
+    <Content Include="ManageResultPage.aspx" />
+    <Content Include="MethodologiesPage.aspx" />
+    <Content Include="TailorMethodologyPage.aspx" />
+    <Content Include="TailorResultPage.aspx" />
+    <Content Include="UserDetailsPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminManageResultPage.aspx.cs">
+      <DependentUpon>AdminManageResultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManageResultPage.aspx.designer.cs">
+      <DependentUpon>AdminManageResultPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminPage.aspx.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1567,6 +1594,13 @@
       <DependentUpon>AdminPage.Master</DependentUpon>
     </Compile>
     <Compile Include="ClassDefault.cs" />
+    <Compile Include="ContactUsPage.aspx.cs">
+      <DependentUpon>ContactUsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUsPage.aspx.designer.cs">
+      <DependentUpon>ContactUsPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DefaultPage.Master.cs">
       <DependentUpon>DefaultPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1580,6 +1614,20 @@
     </Compile>
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IdentifyMethodologyPage.aspx.cs">
+      <DependentUpon>IdentifyMethodologyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdentifyMethodologyPage.aspx.designer.cs">
+      <DependentUpon>IdentifyMethodologyPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IdentifyResultPage.aspx.cs">
+      <DependentUpon>IdentifyResultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdentifyResultPage.aspx.designer.cs">
+      <DependentUpon>IdentifyResultPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
@@ -1595,14 +1643,52 @@
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterPage.aspx.cs">
-      <DependentUpon>RegisterPage.aspx</DependentUpon>
+    <Compile Include="ManageFeedbackPage.aspx.cs">
+      <DependentUpon>ManageFeedbackPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RegisterPage.aspx.designer.cs">
-      <DependentUpon>RegisterPage.aspx</DependentUpon>
+    <Compile Include="ManageFeedbackPage.aspx.designer.cs">
+      <DependentUpon>ManageFeedbackPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ManageResultPage.aspx.cs">
+      <DependentUpon>ManageResultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageResultPage.aspx.designer.cs">
+      <DependentUpon>ManageResultPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MethodologiesPage.aspx.cs">
+      <DependentUpon>MethodologiesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MethodologiesPage.aspx.designer.cs">
+      <DependentUpon>MethodologiesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TailorMethodologyPage.aspx.cs">
+      <DependentUpon>TailorMethodologyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TailorMethodologyPage.aspx.designer.cs">
+      <DependentUpon>TailorMethodologyPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TailorResultPage.aspx.cs">
+      <DependentUpon>TailorResultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TailorResultPage.aspx.designer.cs">
+      <DependentUpon>TailorResultPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDetailsPage.aspx.cs">
+      <DependentUpon>UserDetailsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDetailsPage.aspx.designer.cs">
+      <DependentUpon>UserDetailsPage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

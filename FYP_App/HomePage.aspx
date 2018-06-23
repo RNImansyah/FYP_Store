@@ -39,40 +39,56 @@
 					<ul class="hide">
 
 						<!-- SLIDE  -->
-						<li data-transition="parallaxtobottom" data-slotamount="7" data-masterspeed="600"  data-saveperformance="off"  data-title="Courses And Events">
+						<li data-transition="parallaxtobottom" data-slotamount="7" data-masterspeed="600"  data-saveperformance="off"  data-title="Identification System">
 							<!-- MAIN IMAGE -->
 							<img src="demo_files/images/lightblue-min.jpg"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
-							<div class="tp-caption white_big skewfromleft tp-resizeme"
-								data-x="471"
+							<div class="tp-caption font-roboto skewfromleft tp-resizeme"
+								data-x="50"
 								data-y="100" 
-								data-speed="400"
-								data-start="1500"
-								data-easing="Power3.easeInOut"
-								data-splitin="words"
-								data-splitout="none"
-								data-elementdelay="0.1"
-								data-endelementdelay="0.1"
-								data-endspeed="600"
-								style="z-index: 2; color:#fff; font-size:65px; line-height:85px; font-weight:bold; letter-spacing:0; text-shadow:none;">
-									Courses And Events
-							</div>
-
-							<div class="tp-caption content_text_center skewfromleft tp-resizeme"
-								data-x="530"
-								data-y="195" 
 								data-speed="500"
-								data-start="2000"
-								data-easing="Power3.easeInOut"
+								data-start="1500"
+								data-easing="Cubic.easeOut"
 								data-splitin="none"
 								data-splitout="none"
 								data-elementdelay="0.1"
 								data-endelementdelay="0.1"
-								data-endspeed="600"
+								data-endspeed="500"
+								style="z-index: 2; color:#333; font-size:65px; line-height:85px; font-weight:bold; letter-spacing:0; text-shadow:none;">
+									Identification System for <br />
+                                Project Management Methodology
+							</div>
 
-								style="z-index: 3; font-size:20px; color:#fff; font-weight:300; text-shadow:none;">
-									Create courses and events with custom post<br />
-									Use WooCommerce to sell ticket to your events ...
+							<div class="tp-caption skewfromrightshort tp-resizeme"
+								data-x="50"
+								data-y="300" 
+								data-speed="500"
+								data-start="2000"
+								data-easing="easeInCirc"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="500"
+								style="z-index: 3; font-size:20px; color:#333; font-weight:300; text-shadow:none;">
+									System functionality that will recommend to the user <br />
+                                a suitable system development methodology to start their project<br />
+                                    depending on the criteria provided by the user
+							</div>
+
+                            							<div class="tp-caption sfb tp-resizeme"
+								data-x="50"
+								data-y="410" 
+								data-speed="500"
+								data-start="2500"
+								data-easing="Power3.easeIn"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="1"
+								data-endelementdelay="0.1"
+								data-endspeed="500"
+								style="z-index: 4; max-width: auto;">
+									<a class="btn btn-3d btn-dark btn-lg" href="LoginPage.aspx">LOGIN TO START</a>
 							</div>
 
 							<div class="tp-caption tp-fade"
@@ -85,10 +101,10 @@
 								data-endelementdelay="0.1"
 								data-endspeed="300"
 								style="z-index: 4;">
-									<img src="demo_files/images/thematics/education/slider_girl_2.png" alt="">
+									<%--<img src="demo_files/images/thematics/education/slider_girl_2.png" alt="">--%>
 							</div>
 
-							<div class="tp-caption skewfromleft tp-resizeme  un-button-2-lg"
+<%--							<div class="tp-caption skewfromleft tp-resizeme  un-button-2-lg"
 								data-x="665"
 								data-y="300" 
 								data-speed="300"
@@ -102,11 +118,11 @@
 
 								style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
 									<a class="btn btn-3d btn-teal btn-lg" href="#purchase">PURCHASE SMARTY</a>
-							</div>
+							</div>--%>
 						</li>
 
 						<!-- SLIDE  -->
-						<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" data-title="Education and Training">
+						<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" data-title="Tailoring System">
 							<!-- MAIN IMAGE -->
 							<img src="demo_files/images/wall2.jpg" alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
@@ -122,8 +138,8 @@
 								data-endelementdelay="0.1"
 								data-endspeed="500"
 								style="z-index: 2; color:#333; font-size:65px; line-height:85px; font-weight:bold; letter-spacing:0; text-shadow:none;">
-									Education and Training<br />
-									Organization
+									Tailoring System for<br />
+									Project Management Methodology
 							</div>
 
 							<div class="tp-caption skewfromrightshort tp-resizeme"
@@ -138,8 +154,9 @@
 								data-endelementdelay="0.1"
 								data-endspeed="500"
 								style="z-index: 3; font-size:20px; color:#333; font-weight:300; text-shadow:none;">
-									University is an advanced solution for Education and<br />
-									Training organization, University, Event and more ...
+									System functionality that will recommend to the user <br />
+                                a suitable system development methodology for tailoring <br />
+                                     depending on the criteria provided by the user
 							</div>
 
 							<div class="tp-caption sfb tp-resizeme"
@@ -154,7 +171,7 @@
 								data-endelementdelay="0.1"
 								data-endspeed="500"
 								style="z-index: 4; max-width: auto;">
-									<a class="btn btn-3d btn-teal btn-lg" href="#purchase">PURCHASE SMARTY</a>
+									<a class="btn btn-3d btn-dark btn-lg" href="LoginPage.aspx">LOGIN TO START</a>
 							</div>
 
 							<div class="tp-caption sfr fadeout"
@@ -167,10 +184,10 @@
 								data-endelementdelay="0.1"
 								data-endspeed="500"
 								style="z-index: 5;">
-								<img src="demo_files/images/thematics/education/slider_girl_1.png" alt="">
+								<%--<img src="demo_files/images/thematics/education/slider_girl_1.png" alt="">--%>
 							</div>
 
-							<div class="tp-caption sfb tp-resizeme"
+<%--							<div class="tp-caption sfb tp-resizeme"
 								data-x="280"
 								data-y="410" 
 								data-speed="500"
@@ -183,7 +200,7 @@
 								data-endspeed="500"
 								style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
 									<a class="btn btn-3d btn-blue btn-lg" href="#">PRODUCT TOUR</a>
-							</div>
+							</div>--%>
 						</li>
 					
 					</ul>
@@ -205,9 +222,9 @@
 							<div class="box-icon box-icon-left">
 								<a class="box-icon-title" href="#">
 									<i class="fa fa-graduation-cap"></i>
-									<h2>Education Organization</h2>
+									<h2>Traditional Methodology</h2>
 								</a>
-								<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+								<p>Traditional system development methodology creates clear visualization and definition before the project starts. This allows for high customer involvement and clear requirements for the whole process of the project</p>
 							</div>
 
 						</div>
@@ -216,10 +233,10 @@
 
 							<div class="box-icon box-icon-left">
 								<a class="box-icon-title" href="#">
-									<i class="fa fa-paper-plane"></i>
-									<h2>Training Center</h2>
+									<i class="fa fa-graduation-cap"></i>
+									<h2>Agile Methodology</h2>
 								</a>
-								<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+								<p>Agile system development methodology provides for flexibility in that changes can be easily made before and after the project starts. Agile Methodology is best applied when requirements have not be fully prepared and/or there will be changing requirements during the progression of the project</p>
 							</div>
 
 						</div>
@@ -228,10 +245,10 @@
 
 							<div class="box-icon box-icon-left">
 								<a class="box-icon-title" href="#">
-									<i class="fa fa-ticket"></i>
-									<h2>Event Tickets</h2>
+									<i class="fa fa-graduation-cap"></i>
+									<h2>Hybrid Methodology</h2>
 								</a>
-								<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+								<p>Hybrid system development methodology is a combination of both Traditional Methodology and Agile Methodology. Hybrid provide the advantage where fused methodologies cover the missing characteristics that the other methodology does not provide.</p>
 							</div>
 
 						</div>
@@ -249,10 +266,10 @@
 				<div class="container">
 
 					<div class="text-center">
-						<h2 class="fs-40 fw-300">Your Business Starts With A Beautiful Website.</h2>
-						<a class="btn btn-default btn-lg" href="#">VIEW COURSES <i class="fa fa-angle-right"></i></a> 
+						<h2 class="fs-40 fw-300">Attempt A Survey To Find The Suitable Methodology</h2>
+						<a class="btn btn-aqua btn-lg" href="IdentifyMethodologyPage.aspx">IDENTIFY A METHODOLOGY <i class="fa fa-angle-right"></i></a> 
 						&nbsp; OR &nbsp; 
-						<a class="btn btn-3d btn-blue btn-lg" href="#">TAKE A TOUR <i class="fa fa-angle-right"></i></a>
+						<a class="btn btn-blue btn-lg" href="TailorMethodologyPage.aspx">TAILOR A METHODOLOGY <i class="fa fa-angle-right"></i></a>
 					</div>
 
 				</div>
