@@ -5,7 +5,7 @@
     <link type="text/css" rel="stylesheet" href="assets/css/material.min.css" />
     <style>
         #header.navbar-toggleable-md .navbar-collapse {
-            margin-left: 2px;
+            margin-left: 13px;
         }
     </style>
 </asp:Content>
@@ -15,7 +15,7 @@
     <section class="page-header page-header-xs">
         <div class="container">
 
-            <h1>IDENTIFICATION SYSTEM </h1>
+            <h1>METHODOLOGY IDENTIFICATION SYSTEM </h1>
 
             <!-- breadcrumbs -->
             <ol class="breadcrumb">
@@ -44,17 +44,7 @@
                     <h3>Identification System</h3>
                     <p>The survey will asks the requirements of the project and depending on the inputs given by the user, the system will predict and recomment one suitable methodology for the user.</p>
 
-                    <!-- pre code -->
-                    <%--<div class="text-left mt-20">
-                        <a href="javascript:;" onclick="jQuery('#pre-0').slideToggle();">Show Code</a>
-                    </div>--%>
-                    <pre id="pre-0" class="text-left rad-0 text-danger hide">
-&lt;i class="fs-200 fa fa-desktop text-muted hidden-lg-down"&gt;&lt;/i&gt;
-&lt;i class="fs-200 fa fa-laptop text-info hidden-sm-down hidden-lg-up"&gt;&lt;/i&gt;
-&lt;i class="fs-200 fa fa-tablet text-success hidden-md-up hidden-xs-down"&gt;&lt;/i&gt;
-&lt;i class="fs-200 fa fa-mobile text-warning hidden-sm-up"&gt;&lt;/i&gt;
-</pre>
-                    <!-- /pre code -->
+
 
                 </div>
 
@@ -63,272 +53,296 @@
         </div>
     </section>
 
+    <form method="post" action="IdentifyMethodologyPage.aspx?impsubmit=true">
+        <section class="section-xs">
+            <div class="container">
 
-    <section class="section-xs">
-        <div class="container">
-
-            <div class="heading-title heading-dotted text-center">
-                <h4>Question 1</h4>
-            </div>
-            <p><h5><b>What is your ideal project approach for the Development Methodology?</b></h5></p>
-            <br />
-            <div class="row">
-
-                <p style="width: 300px">
-                    <input class="mdl-slider mdl-js-slider" type="range" id="s1" min="1" max="5" value="1" step="1" oninput="showMessage(1,this.value)" onchange="showMessage(1,this.value)">
+                <div class="heading-title heading-dotted text-center">
+                    <h4>Question 1</h4>
+                </div>
+                <p>
+                    <h5><b>What is your ideal system development methodology approach for your project?</b></h5>
                 </p>
+                <br />
+                <div class="row" >
+                  
+                        <p style="width: 300px">
+                            <input name="Q1" class="mdl-slider mdl-js-slider" type="range" id="s1" min="1" max="5" value="1" step="1" oninput="showMessage(1,this.value)" onchange="showMessage(1,this.value)">
+                        </p>
 
-                <div id="message1" class="col-md-1">
-                    1 
+                        <div id="message1" class="col-md-1">
+                            1 
+                        </div>
+                 
+                        
+                    
                 </div>
-                <span>a;lsdkfja;lsdkfjals;kdfjsa;kldfj</span>
+               
+                <span><strong>[1 - Traditional]  ->  [3 - Agile]  ->  [5 - Hybrid]</strong></span>
+
             </div>
+        </section>
 
 
-        </div>
-    </section>
+        <section class="section-xs">
+            <div class="container">
 
-
-    <section class="section-xs">
-        <div class="container">
-
-            <div class="heading-title heading-dotted text-center">
-                <h4>Question 1</h4>
-            </div>
-            <p><h5><b>What is your ideal project approach for the Development Methodology?</b></h5></p>
-            <br />
-            <div class="row">
-
-                <p style="width: 300px">
-                    <input class="mdl-slider mdl-js-slider" type="range" id="s2" min="1" max="5" value="1" step="1" oninput="showMessage(2,this.value)" onchange="showMessage(2,this.value)">
+                <div class="heading-title heading-dotted text-center">
+                    <h4>Question 2</h4>
+                </div>
+                <p>
+                    <h5><b>What would be the starting budget for the project?</b></h5>
                 </p>
+                <br />
+                <div class="row">
 
-                <div id="message2" class="col-md-1">
-                    1 
+                    <p style="width: 300px">
+                        <input name="Q2" class="mdl-slider mdl-js-slider" type="range" id="s2" min="1" max="5" value="1" step="1" oninput="showMessage(2,this.value)" onchange="showMessage(2,this.value)">
+                    </p>
+
+                    <div id="message2" class="col-md-1">
+                        1 
+                    </div>
+                    
                 </div>
-                <span>a;lsdkfja;lsdkfjals;kdfjsa;kldfj</span>
+                <span><strong>[1 - <$10.000]  ->  [2 - <$20.000]  ->  [3 - <$45.000]  ->  [4 - <$60.000]  ->  [5 - <$80.000]</strong></span>
+
             </div>
+        </section>
 
 
-        </div>
-    </section>
+        <section class="section-xs">
+            <div class="container">
 
-    
-     <section class="section-xs">
-        <div class="container">
-
-            <div class="heading-title heading-dotted text-center">
-                <h4>Question 1</h4>
-            </div>
-            <p><h5><b>What is your ideal project approach for the Development Methodology?</b></h5></p>
-            <br />
-            <div class="row">
-
-                <p style="width: 300px">
-                    <input class="mdl-slider mdl-js-slider" type="range" id="s3" min="1" max="5" value="1" step="1" oninput="showMessage(3,this.value)" onchange="showMessage(3,this.value)">
+                <div class="heading-title heading-dotted text-center">
+                    <h4>Question 3</h4>
+                </div>
+                <p>
+                    <h5><b>What would be the criticality level on the project completion?</b></h5>
                 </p>
+                <br />
+                <div class="row">
 
-                <div id="message3" class="col-md-1">
-                    1 
+                    <p style="width: 300px">
+                        <input name="Q3" class="mdl-slider mdl-js-slider" type="range" id="s3" min="1" max="5" value="1" step="1" oninput="showMessage(3,this.value)" onchange="showMessage(3,this.value)">
+                    </p>
+
+                    <div id="message3" class="col-md-1">
+                        1 
+                    </div>
+                   
                 </div>
-                <span>a;lsdkfja;lsdkfjals;kdfjsa;kldfj</span>
+                 <span><strong>[1 - Repetitive & No Technological Improvements]  ->  [3 - Enhancement of Existing Product/Service]  ->  [5 - Innovative or New Product/Service]</strong></span>
+
             </div>
+        </section>
 
 
-        </div>
-    </section>
+        <section class="section-xs">
+            <div class="container">
 
-
-     <section class="section-xs">
-        <div class="container">
-
-            <div class="heading-title heading-dotted text-center">
-                <h4>Question 1</h4>
-            </div>
-            <p><h5><b>What is your ideal project approach for the Development Methodology?</b></h5></p>
-            <br />
-            <div class="row">
-
-                <p style="width: 300px">
-                    <input class="mdl-slider mdl-js-slider" type="range" id="s4" min="1" max="5" value="1" step="1" oninput="showMessage(4,this.value)" onchange="showMessage(4,this.value)">
+                <div class="heading-title heading-dotted text-center">
+                    <h4>Question 4</h4>
+                </div>
+                <p>
+                    <h5><b>How long is the duration of the project?</b></h5>
                 </p>
+                <br />
+                <div class="row">
 
-                <div id="message4" class="col-md-1">
-                    1 
+                    <p style="width: 300px">
+                        <input name="Q4" class="mdl-slider mdl-js-slider" type="range" id="s4" min="1" max="5" value="1" step="1" oninput="showMessage(4,this.value)" onchange="showMessage(4,this.value)">
+                    </p>
+
+                    <div id="message4" class="col-md-1">
+                        1 
+                    </div>
+               
                 </div>
-                <span>a;lsdkfja;lsdkfjals;kdfjsa;kldfj</span>
+                     <span><strong>[1 - < 1 Month]  ->  [2 - < 2 Months]  ->  [3 - < 3.5 Months]  ->  [4 - < 5 Months]  ->  [5 - >= 5 Months]</strong></span>
+
             </div>
+        </section>
 
 
-        </div>
-    </section>
+        <section class="section-xs">
+            <div class="container">
 
-
-     <section class="section-xs">
-        <div class="container">
-
-            <div class="heading-title heading-dotted text-center">
-                <h4>Question 1</h4>
-            </div>
-            <p><h5><b>What is your ideal project approach for the Development Methodology?</b></h5></p>
-            <br />
-            <div class="row">
-
-                <p style="width: 300px">
-                    <input class="mdl-slider mdl-js-slider" type="range" id="s5" min="1" max="5" value="1" step="1" oninput="showMessage(5,this.value)" onchange="showMessage(5,this.value)">
+                <div class="heading-title heading-dotted text-center">
+                    <h4>Question 5</h4>
+                </div>
+                <p>
+                    <h5><b>How big is the the project team size?</b></h5>
                 </p>
+                <br />
+                <div class="row">
 
-                <div id="message5" class="col-md-1">
-                    1 
+                    <p style="width: 300px">
+                        <input name="Q5" class="mdl-slider mdl-js-slider" type="range" id="s5" min="1" max="5" value="1" step="1" oninput="showMessage(5,this.value)" onchange="showMessage(5,this.value)">
+                    </p>
+
+                    <div id="message5" class="col-md-1">
+                        1 
+                    </div>
+                    
                 </div>
-                <span>a;lsdkfja;lsdkfjals;kdfjsa;kldfj</span>
+                <span><strong>[1 - 2 To 4 Members]  ->  [2 - 5 To 6 members]  ->  [3 - 7 To 8 Members]  ->  [4 - 9 To 10 Members]  ->  [5 - 10+ Members]</strong></span>
+
             </div>
+        </section>
 
 
-        </div>
-    </section>
+        <section class="section-xs">
+            <div class="container">
 
-
-     <section class="section-xs">
-        <div class="container">
-
-            <div class="heading-title heading-dotted text-center">
-                <h4>Question 1</h4>
-            </div>
-            <p><h5><b>What is your ideal project approach for the Development Methodology?</b></h5></p>
-            <br />
-            <div class="row">
-
-                <p style="width: 300px">
-                    <input class="mdl-slider mdl-js-slider" type="range" id="s6" min="1" max="5" value="1" step="1" oninput="showMessage(6,this.value)" onchange="showMessage(6,this.value)">
+                <div class="heading-title heading-dotted text-center">
+                    <h4>Question 6</h4>
+                </div>
+                <p>
+                    <h5><b>What would be the possible qualifications for technical skills on the upcoming project?</b></h5>
                 </p>
+                <br />
+                <div class="row">
 
-                <div id="message6" class="col-md-1">
-                    1 
+                    <p style="width: 300px">
+                        <input name="Q6" class="mdl-slider mdl-js-slider" type="range" id="s6" min="1" max="5" value="1" step="1" oninput="showMessage(6,this.value)" onchange="showMessage(6,this.value)">
+                    </p>
+
+                    <div id="message6" class="col-md-1">
+                        1 
+                    </div>
+               
                 </div>
-                <span>a;lsdkfja;lsdkfjals;kdfjsa;kldfj</span>
+                     <span><strong>[1 - Under-Qualified]  ->  [2 - Mediocre]  ->  [3 - Average]  ->  [4 - High Standard]  ->  [5 - Highly Knowledgable]</strong></span>
+
             </div>
+        </section>
 
 
-        </div>
-    </section>
+        <section class="section-xs">
+            <div class="container">
 
-
-     <section class="section-xs">
-        <div class="container">
-
-            <div class="heading-title heading-dotted text-center">
-                <h4>Question 1</h4>
-            </div>
-            <p><h5><b>What is your ideal project approach for the Development Methodology?</b></h5></p>
-            <br />
-            <div class="row">
-
-                <p style="width: 300px">
-                    <input class="mdl-slider mdl-js-slider" type="range" id="s7" min="1" max="5" value="1" step="1" oninput="showMessage(7,this.value)" onchange="showMessage(7,this.value)">
+                <div class="heading-title heading-dotted text-center">
+                    <h4>Question 7</h4>
+                </div>
+                <p>
+                    <h5><b>How would you judge the documentation size importance for the project?</b></h5>
                 </p>
+                <br />
+                <div class="row">
 
-                <div id="message7" class="col-md-1">
-                    1 
+                    <p style="width: 300px">
+                        <input name="Q7" class="mdl-slider mdl-js-slider" type="range" id="s7" min="1" max="5" value="1" step="1" oninput="showMessage(7,this.value)" onchange="showMessage(7,this.value)">
+                    </p>
+
+                    <div id="message7" class="col-md-1">
+                        1 
+                    </div>
+                 
                 </div>
-                <span>a;lsdkfja;lsdkfjals;kdfjsa;kldfj</span>
+
+                   <span><strong>[1 - Not Important]  ->  [2 - Minimum]  ->  [3 - Average]  ->  [4 - Proficient]  ->  [5 - Critically Important]</strong></span>
             </div>
+        </section>
 
 
-        </div>
-    </section>
+        <section class="section-xs">
+            <div class="container">
 
-
-     <section class="section-xs">
-        <div class="container">
-
-            <div class="heading-title heading-dotted text-center">
-                <h4>Question 1</h4>
-            </div>
-            <p><h5><b>What is your ideal project approach for the Development Methodology?</b></h5></p>
-            <br />
-            <div class="row">
-
-                <p style="width: 300px">
-                    <input class="mdl-slider mdl-js-slider" type="range" id="s8" min="1" max="5" value="1" step="1" oninput="showMessage(8,this.value)" onchange="showMessage(8,this.value)">
+                <div class="heading-title heading-dotted text-center">
+                    <h4>Question 8</h4>
+                </div>
+                <p>
+                    <h5><b>How many developmental stages would you prefer for the system development methodology?</b></h5>
                 </p>
+                <br />
+                <div class="row">
 
-                <div id="message8" class="col-md-1">
-                    1 
+                    <p style="width: 300px">
+                        <input name="Q8" class="mdl-slider mdl-js-slider" type="range" id="s8" min="1" max="5" value="1" step="1" oninput="showMessage(8,this.value)" onchange="showMessage(8,this.value)">
+                    </p>
+
+                    <div id="message8" class="col-md-1">
+                        1 
+                    </div>
+                   
                 </div>
-                <span>a;lsdkfja;lsdkfjals;kdfjsa;kldfj</span>
+                 <span><strong>[1 - >= 3 Stages]  ->  [2 - >= 5 Stages]  ->  [3 - Stages With 1 Iteration]  ->  [4 - Stages With 2 Iterations]  ->  [5 - Stages with >= 3 Iterations]</strong></span>
+
             </div>
+        </section>
 
 
-        </div>
-    </section>
+        <section class="section-xs">
+            <div class="container">
 
-
-     <section class="section-xs">
-        <div class="container">
-
-            <div class="heading-title heading-dotted text-center">
-                <h4>Question 1</h4>
-            </div>
-            <p><h5><b>What is your ideal project approach for the Development Methodology?</b></h5></p>
-            <br />
-            <div class="row">
-
-                <p style="width: 300px">
-                    <input class="mdl-slider mdl-js-slider" type="range" id="s9" min="1" max="5" value="1" step="1" oninput="showMessage(9,this.value)" onchange="showMessage(9,this.value)">
+                <div class="heading-title heading-dotted text-center">
+                    <h4>Question 9</h4>
+                </div>
+                <p>
+                    <h5><b>How important is applying the optimum tools & techniques for the project?</b></h5>
                 </p>
+                <br />
+                <div class="row">
 
-                <div id="message9" class="col-md-1">
-                    1 
+                    <p style="width: 300px">
+                        <input name="Q9" class="mdl-slider mdl-js-slider" type="range" id="s9" min="1" max="5" value="1" step="1" oninput="showMessage(9,this.value)" onchange="showMessage(9,this.value)">
+                    </p>
+
+                    <div id="message9" class="col-md-1">
+                        1 
+                    </div>
+                    
                 </div>
-                <span>a;lsdkfja;lsdkfjals;kdfjsa;kldfj</span>
+                <span><strong>[1 - Still Require Knowledge]  ->  [2 - Traditional Tools & Techniques]  ->  [3 - Satisfactory Tools & Techniques]  ->  [4 - Proficient Tools & Techniques]  ->  [5 - Latest Version of Tools & Techniques]</strong></span>
+
             </div>
+        </section>
 
 
-        </div>
-    </section>
+        <section class="section-xs">
+            <div class="container">
 
-
-     <section class="section-xs">
-        <div class="container">
-
-            <div class="heading-title heading-dotted text-center">
-                <h4>Question 1</h4>
-            </div>
-            <p><h5><b>What is your ideal project approach for the Development Methodology?</b></h5></p>
-            <br />
-            <div class="row">
-
-                <p style="width: 300px">
-                    <input class="mdl-slider mdl-js-slider" type="range" id="s10" min="1" max="5" value="1" step="1" oninput="showMessage(10,this.value)" onchange="showMessage(10,this.value)">
+                <div class="heading-title heading-dotted text-center">
+                    <h4>Question 10</h4>
+                </div>
+                <p>
+                    <h5><b>How important is it to apply methodology best practices to the project?</b></h5>
                 </p>
+                <br />
+                <div class="row">
 
-                <div id="message10" class="col-md-1">
-                    1 
+                    <p style="width: 300px">
+                        <input name="Q10" class="mdl-slider mdl-js-slider" type="range" id="s10" min="1" max="5" value="1" step="1" oninput="showMessage(10,this.value)" onchange="showMessage(10,this.value)">
+                    </p>
+
+                    <div id="message10" class="col-md-1">
+                        1 
+                    </div>
+                    
                 </div>
-                <span>a;lsdkfja;lsdkfjals;kdfjsa;kldfj</span>
+                <span><strong>[1 - Not Of Importance]  ->  [3 - Applying Satisfactory Methodology Practices]  ->  [5 - Full Application of Methodology Best Practices]</strong></span>
+
             </div>
+        </section>
 
 
-        </div>
-    </section>
+        <section class="section-xs">
+            <div class="container">
 
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i>SUBMIT IDENTIFICATION INPUTS</button>
+                    </div>
+                </div>
 
-     <section class="section-xs">
-        <div class="container">
-
-            <div class="row text-center">
-									<div class="col-md-12">
-										<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> SEND MESSAGE</button>
-									</div>
-								</div>
-
-        </div>
-    </section>
+            </div>
+        </section>
+    </form>
 
     <script type="text/javascript">
-        function showMessage(id,value) {
-            document.getElementById("message"+id).innerHTML = value;
+        function showMessage(id, value) {
+            document.getElementById("message" + id).innerHTML = value;
         }
     </script>
 

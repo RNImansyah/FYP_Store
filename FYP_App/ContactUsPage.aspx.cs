@@ -11,7 +11,16 @@ namespace FYP_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.QueryString["feedback"] != null)
+            {
+                string name = (Request.Form["fullname"]);
+                string email = (Request.Form["email"]);
+                string subject = (Request.Form["subject"]);
+                string message = (Request.Form["message"]);
 
+                string query = "insert into feedback_table (name, subject, message, email) values ('" + name + "', '" + email+ "', '" +subject+ "', '"+message+"')";
+                ClassDefault.executeQuery(query);
+            }
         }
     }
 }

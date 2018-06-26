@@ -366,6 +366,7 @@
     <Content Include="assets\images\_smarty\flags\zm.png" />
     <Content Include="assets\images\_smarty\flags\zw.png" />
     <Content Include="assets\images\_smarty\footer_sprite.png" />
+    <Content Include="assets\images\_smarty\fyp_logo.JPG" />
     <Content Include="assets\images\_smarty\grabbing.png" />
     <Content Include="assets\images\_smarty\grain_bg.png" />
     <Content Include="assets\images\_smarty\imgpattern2.jpg" />
@@ -569,10 +570,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\DB_1.mdf" />
-    <Content Include="App_Data\DB_1_log.ldf">
-      <DependentUpon>DB_1.mdf</DependentUpon>
-    </Content>
     <Content Include="demo_files\images\1200x800\1-min.jpg" />
     <Content Include="demo_files\images\1200x800\10-min.jpg" />
     <Content Include="demo_files\images\1200x800\11-min.jpg" />
@@ -1560,7 +1557,6 @@
     <Content Include="demo_files\styleswitcher\styleswitcher.js" />
     <Content Include="HomePage.aspx" />
     <Content Include="IdentifyMethodologyPage.aspx" />
-    <Content Include="IdentifyResultPage.aspx" />
     <Content Include="LoginPage.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="ManageFeedbackPage.aspx" />
@@ -1621,13 +1617,6 @@
     </Compile>
     <Compile Include="IdentifyMethodologyPage.aspx.designer.cs">
       <DependentUpon>IdentifyMethodologyPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="IdentifyResultPage.aspx.cs">
-      <DependentUpon>IdentifyResultPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="IdentifyResultPage.aspx.designer.cs">
-      <DependentUpon>IdentifyResultPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>

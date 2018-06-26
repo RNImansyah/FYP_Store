@@ -96,25 +96,9 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <!-- BUTTONS -->
-                    <ul class="float-right nav nav-pills nav-second-main">
-
-                        <!-- SEARCH -->
-                        <li class="search">
-                            <a href="javascript:;">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li>
-                        <!-- /SEARCH -->
-
-
-                    </ul>
-                    <!-- /BUTTONS -->
-
-
                     <!-- Logo -->
-                    <a class="logo float-left" href="index.html">
-                        <img src="assets/images/_smarty/logo_light.png" alt="" />
+                    <a class="logo float-left" href="AdminPage.aspx">
+                        <img src="assets/images/_smarty/fyp_logo.jpg" alt="" />
                     </a>
 
                     <!-- 

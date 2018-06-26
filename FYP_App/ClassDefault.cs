@@ -85,7 +85,29 @@ namespace FYP_App
             closeConnection(conn);
             return result;
         }
-        
-        
+
+        public static string getid(string email)
+        {
+            string result = "";
+            SqlConnection conn = getConnection();
+            conn.Open();
+            string query = "select id from user_table where email = '" + email + "'";
+
+            SqlCommand cm = new SqlCommand(query, conn);
+            SqlDataReader sdr = cm.ExecuteReader();
+
+            if (sdr.HasRows)
+            {
+
+                while (sdr.Read())
+                {
+                    result = sdr["id"].ToString();
+                }
+
+            }
+            closeConnection(conn);
+            return result;
+        }
+
     }
 }

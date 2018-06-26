@@ -14,21 +14,22 @@
                 <thead>
                     <tr>
                         <th>Email</th>
-                        <th class="hidden-xs-down">User ID</th>
+                        <th class="hidden-xs-down">Name</th>
                         <th class="hidden-xs-down">Result</th>
                         <th class="hidden-xs-down">Date</th>
                         <th class="hidden-xs-down">Survey Type</th>
+                        <th class="hidden-xs-down">Score</th>
                     </tr>
                 </thead>
                 <tbody>
-<%--                    <%
+                    <%
                         while (sdr.Read())
                         {
                     %>
                     <tr>
                         <td><%=sdr["email"] %>
                         </td>
-                        <td><%=sdr["user_id"] %>
+                        <td><%=sdr["first_name"]%> <%=sdr["last_name"]%>
                         </td>
                         <td><%=sdr["result"] %>
                         </td>
@@ -36,10 +37,12 @@
                         </td>
                         <td><%=sdr["survey_type"] %>
                         </td>
+                        <td><%=sdr["score"] %>
+                        </td>
                     </tr>
                     <%
                         }
-                    %>--%>
+                    %>
                 </tbody>
             </table>
 
