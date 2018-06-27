@@ -1563,7 +1563,6 @@
     <Content Include="ManageResultPage.aspx" />
     <Content Include="MethodologiesPage.aspx" />
     <Content Include="TailorMethodologyPage.aspx" />
-    <Content Include="TailorResultPage.aspx" />
     <Content Include="UserDetailsPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -1660,13 +1659,6 @@
     </Compile>
     <Compile Include="TailorMethodologyPage.aspx.designer.cs">
       <DependentUpon>TailorMethodologyPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="TailorResultPage.aspx.cs">
-      <DependentUpon>TailorResultPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="TailorResultPage.aspx.designer.cs">
-      <DependentUpon>TailorResultPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserDetailsPage.aspx.cs">
       <DependentUpon>UserDetailsPage.aspx</DependentUpon>
