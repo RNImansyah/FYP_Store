@@ -14,14 +14,40 @@ namespace FYP_App
             if (Request.QueryString["register"] != null)
             {
                 string password = Request.Form["password"];
-                string fname = Request.Form["fname"];
-                string lname = Request.Form["lname"];
-                string email = Request.Form["email"];
-                string contact = Request.Form["contact"];
-                string query = "insert into user_table (PASSWORD, FIRST_NAME, LAST_NAME, EMAIL, CONTACT, USER_TYPE) values ('" + password + "','" + fname + "','" + lname + "','" + email + "','" + contact + "','user')";
-                ClassDefault.executeQuery(query);
+                string confirm_password = Request.Form["confirm_password"];
+                if (password == confirm_password)
+                {
+                    if(password.Length < 6)
+                    {
+                        Response.Write("<script>alert('Password must be more than 6 characters')</script>");
+                    }
+                    else
+                    {
+                        string fname = Request.Form["fname"];
+                        string lname = Request.Form["lname"];
+                        string email = Request.Form["email"];
+                        bool checkEmail = ClassDefault.isEmailExists(email);
+                        if (!checkEmail)
+                        {
 
-                Response.Write("<script>alert('Register Success')</script>");
+                            string contact = Request.Form["contact"];
+                            string query = "insert into user_table (PASSWORD, FIRST_NAME, LAST_NAME, EMAIL, CONTACT, USER_TYPE) values ('" + password + "','" + fname + "','" + lname + "','" + email + "','" + contact + "','user')";
+                            ClassDefault.executeQuery(query);
+
+                            Response.Write("<script>alert('Register Success')</script>");
+                        }
+                        else
+                        {
+                            Response.Write("<script>alert('Email already exists')</script>");
+                        }
+                    }
+                    
+                    
+                }
+                else
+                {
+                    Response.Write("<script>alert('Password Mismatch')</script>");
+                }
 
             }
 

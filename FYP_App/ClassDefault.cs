@@ -63,6 +63,24 @@ namespace FYP_App
             return result;
         }
 
+
+        public static bool isEmailExists(string email)
+        {
+            bool result = false;
+
+            SqlConnection conn = getConnection();
+            conn.Open();
+            string query = $"SELECT ID FROM USER_TABLE WHERE EMAIL='{email}'";
+            SqlCommand cm = new SqlCommand(query, conn);
+            SqlDataReader sdr = cm.ExecuteReader();
+            if (sdr.HasRows)
+            {
+                result = true;
+            }
+
+            return result;
+        }
+
         public static string getFName(string email)
         {
             string result = "";

@@ -21,13 +21,16 @@
         </div>
     </section>
 
-    <section class="section-sm">
+    <section class="section-xs">
         <div class="container">
 
             <div class="col-md-8">
-                <h3 style="color: dodgerblue">Your project belongs to <%=category%> category with score: <%=result %></h3>
+                <h3 style="color: dodgerblue">The Project Belongs to the "<%=category%>" Category.</h3>
                 <p>
-                    Below are the methodologies that belongs to the <%=category%> category
+                    The system has calculated all the inputs given by the user, and the overall score is: <%=result %>.
+                    <br />
+                    <br />
+                    The recommended system development methodologies for "<%=category%>" category have been listed below.
                 </p>
 
             </div>
@@ -39,7 +42,7 @@
         {
 
     %>
-    <section class="section">
+    <section class="section-xs">
         <div class="container">
             <div class="heading-title heading-dotted text-center">
                 <h4>PROTOTYPING METHODOLOGY</h4>
@@ -89,16 +92,12 @@
                     <th>Best Practices</th>
                     <td>Planning, requirements specification, maintenance, testing, objectives</td>
                 </tr>
-                <tr>
-                    <th>Reccommended Result</th>
-                    <td>25</td>
-                </tr>
             </table>
 
         </div>
     </section>
 
-    <section class="section">
+    <section class="section-xs">
         <div class="container">
             <div class="heading-title heading-dotted text-center">
                 <h4>RAPID APPLICATION DEVELOPMENT METHODOLOGY</h4>
@@ -148,10 +147,6 @@
                     <th>Best Practices</th>
                     <td>Planning, requirements specification, maintenance, testing, objectives</td>
                 </tr>
-                <tr>
-                    <th>Reccommended Result</th>
-                    <td>30</td>
-                </tr>
             </table>
 
         </div>
@@ -160,7 +155,7 @@
     <%}
         else if (category == "Medium")
         { %>
-    <section class="section">
+    <section class="section-xs">
         <div class="container">
             <div class="heading-title heading-dotted text-center">
                 <h4>WATERFALL METHODOLOGY</h4>
@@ -216,7 +211,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section-xs">
         <div class="container">
             <div class="heading-title heading-dotted text-center">
                 <h4>EXTREME PROGRAMMING METHODOLOGY</h4>
@@ -272,7 +267,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section-xs">
         <div class="container">
             <div class="heading-title heading-dotted text-center">
                 <h4>RAPID APPLICATION DEVELOPMENT METHODOLOGY</h4>
@@ -322,13 +317,16 @@
                     <th>Best Practices</th>
                     <td>Planning, requirements specification, maintenance, testing, objectives</td>
                 </tr>
-
+                <tr>
+                    <th>Recommended for Score of</th>
+                    <td>25</td>
+                </tr>
             </table>
 
         </div>
     </section>
 
-        <section class="section">
+    <section class="section-xs">
         <div class="container">
             <div class="heading-title heading-dotted text-center">
                 <h4>DYNAMIC SYSTEM DEVELOPMENT METHODOLOGY</h4>
@@ -390,7 +388,7 @@
         {
     %>
 
-        <section class="section">
+    <section class="section-xs">
         <div class="container">
             <div class="heading-title heading-dotted text-center">
                 <h4>SCRUM METHODOLOGY</h4>
@@ -446,8 +444,8 @@
         </div>
     </section>
 
-    
-        <section class="section">
+
+    <section class="section-xs">
         <div class="container">
             <div class="heading-title heading-dotted text-center">
                 <h4>SPIRAL METHODOLOGY</h4>

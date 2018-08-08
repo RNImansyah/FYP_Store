@@ -7,34 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <!-- REVOLUTION SLIDER -->
 			<div class="slider fullwidthbanner-container roundedcorners">
-				<!--
-					Navigation Styles:
-					
-						data-navigationStyle="" theme default navigation
-						
-						data-navigationStyle="preview1"
-						data-navigationStyle="preview2"
-						data-navigationStyle="preview3"
-						data-navigationStyle="preview4"
-						
-					Bottom Shadows
-						data-shadow="1"
-						data-shadow="2"
-						data-shadow="3"
-						
-					Slider Height (do not use on fullscreen mode)
-						data-height="300"
-						data-height="350"
-						data-height="400"
-						data-height="450"
-						data-height="500"
-						data-height="550"
-						data-height="600"
-						data-height="650"
-						data-height="700"
-						data-height="750"
-						data-height="800"
-				-->
+				
 				<div class="fullwidthbanner" data-height="600" data-shadow="0" data-navigationStyle="preview2">
 					<ul class="hide">
 
@@ -101,24 +74,10 @@
 								data-endelementdelay="0.1"
 								data-endspeed="300"
 								style="z-index: 4;">
-									<%--<img src="demo_files/images/thematics/education/slider_girl_2.png" alt="">--%>
+									
 							</div>
 
-<%--							<div class="tp-caption skewfromleft tp-resizeme  un-button-2-lg"
-								data-x="665"
-								data-y="300" 
-								data-speed="300"
-								data-start="2500"
-								data-easing="Power3.easeInOut"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.1"
-								data-endelementdelay="0.1"
-								data-endspeed="300"
 
-								style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
-									<a class="btn btn-3d btn-teal btn-lg" href="#purchase">PURCHASE SMARTY</a>
-							</div>--%>
 						</li>
 
 						<!-- SLIDE  -->
@@ -184,23 +143,10 @@
 								data-endelementdelay="0.1"
 								data-endspeed="500"
 								style="z-index: 5;">
-								<%--<img src="demo_files/images/thematics/education/slider_girl_1.png" alt="">--%>
+								
 							</div>
 
-<%--							<div class="tp-caption sfb tp-resizeme"
-								data-x="280"
-								data-y="410" 
-								data-speed="500"
-								data-start="2500"
-								data-easing="Power3.easeInOut"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.1"
-								data-endelementdelay="0.1"
-								data-endspeed="500"
-								style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
-									<a class="btn btn-3d btn-blue btn-lg" href="#">PRODUCT TOUR</a>
-							</div>--%>
+
 						</li>
 					
 					</ul>
@@ -212,9 +158,7 @@
     <!-- Services -->
 			<section>
 				<div class="container">
-					<!--
-					LTR INFO: box-icon-left or box-icon-right - are the same on LTR
-					-->
+					
 					<div class="row">
 
 						<div class="col-sm-4">

@@ -57,7 +57,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <label for="contact:message">Message *</label>
-                                    <textarea required maxlength="10000" rows="8" class="form-control" name="message" id="contact:message"></textarea>
+                                    <textarea required maxlength="300" rows="8" class="form-control" name="message" id="contact:message"></textarea>
                                 </div>
                             </div>
 

@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/DefaultPage.Master" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="FYP_App.LoginPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+   
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -57,17 +58,9 @@
 
 									<div class="row">
 
-										<div class="col-md-6 col-sm-6 col-6">
-											
-											<!-- Inform Tip -->                                        
-											<div class="form-tip pt-20">
-												<a class="no-text-decoration fs-13 mt-10 block" href="#">Forgot Password?</a>
-											</div>
-											
-										</div>
 
 										<div class="col-md-6 col-sm-6 col-6 text-right">
-
+                                            <br />
 											<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> LOGIN</button>
 
 										</div>
@@ -147,7 +140,7 @@
 												<label for="register:pass1">Password *</label>
 												<label class="input mb-10">
 													<i class="ico-append fa fa-lock"></i>
-													<input required="" type="password" class="err" name="password">
+													<input id="password" required="" type="password" class="err" name="password">
 													<b class="tooltip tooltip-bottom-right">Min. 6 characters</b>
 												</label>
 											</div>
@@ -156,7 +149,7 @@
 												<label for="register:pass2">Confirm Password *</label>
 												<label class="input mb-10">
 													<i class="ico-append fa fa-lock"></i>
-													<input required="" type="password" class="err">
+													<input id="confirm_password" required="" type="password" class="err" name="confirm_password">
 													<b class="tooltip tooltip-bottom-right">Type the password again</b>
 												</label>
 											</div>

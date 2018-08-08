@@ -37,7 +37,7 @@ namespace FYP_App
                     string result = showCategory(sum);
                     string query = "insert into survey_result (user_id, result, survey_type, score) values (" + id + ", '" + result + "', 'Tailoring Methodology', '" + sum + "')";
                     ClassDefault.executeQuery(query);
-                    Response.Redirect("MethodologiesPage.aspx?category=" + result + "&result=" + sum + "");
+                    Response.Redirect("TailoringResultPage.aspx?category=" + result + "&result=" + sum + "");
                 }
             }
         }

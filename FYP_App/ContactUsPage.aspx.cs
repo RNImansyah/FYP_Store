@@ -18,7 +18,7 @@ namespace FYP_App
                 string subject = (Request.Form["subject"]);
                 string message = (Request.Form["message"]);
 
-                string query = "insert into feedback_table (name, subject, message, email) values ('" + name + "', '" + email+ "', '" +subject+ "', '"+message+"')";
+                string query = "insert into feedback_table (name, subject, message, email) values ('" + name + "', '" + subject + "', '" + message + "', '"+ email + "')";
                 ClassDefault.executeQuery(query);
             }
         }

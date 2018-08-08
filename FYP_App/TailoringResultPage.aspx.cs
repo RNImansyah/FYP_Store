@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace FYP_App
 {
-    public partial class MethodologyListPage : System.Web.UI.Page
+    public partial class TailoringResultPage : System.Web.UI.Page
     {
         public string description = string.Empty;
         public string category = string.Empty;
@@ -15,12 +15,13 @@ namespace FYP_App
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.QueryString["category"]!= null){
+            if (Request.QueryString["category"] != null)
+            {
                 category = Request.QueryString["category"];
                 result = Request.QueryString["result"];
             }
 
-            
+
         }
     }
 }

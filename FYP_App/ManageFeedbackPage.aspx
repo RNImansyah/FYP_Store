@@ -7,8 +7,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section>
         <div class="container">
-
-            <table class="table table-striped table-bordered table-hover" id="sample_5">
+            
+            <table class="table table-striped table-bordered table-hover" style="table-layout:fixed;word-wrap:break-word" id="sample_5">
                 <thead>
                     <tr>
                         <th class="hidden-xs-down">Name</th>
@@ -42,7 +42,7 @@
             </table>
 
 
-
+          
 
 
 

@@ -1562,6 +1562,7 @@
     <Content Include="ManageFeedbackPage.aspx" />
     <Content Include="ManageResultPage.aspx" />
     <Content Include="MethodologiesPage.aspx" />
+    <Content Include="TailoringResultPage.aspx" />
     <Content Include="TailorMethodologyPage.aspx" />
     <Content Include="UserDetailsPage.aspx" />
     <Content Include="Web.config" />
@@ -1653,6 +1654,13 @@
       <DependentUpon>MethodologiesPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TailoringResultPage.aspx.cs">
+      <DependentUpon>TailoringResultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TailoringResultPage.aspx.designer.cs">
+      <DependentUpon>TailoringResultPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TailorMethodologyPage.aspx.cs">
       <DependentUpon>TailorMethodologyPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
